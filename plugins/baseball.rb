@@ -44,5 +44,5 @@ class Baseball < Linkbot::Plugin
 end
 
 rescue LoadError
-	puts '!baseball plugin requires gameday_api (on GitHub)'
+	puts '!baseball plugin requires gameday_api (http://github.com/timothyf/gameday_api)'
 end
