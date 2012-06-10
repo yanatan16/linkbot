@@ -5,7 +5,6 @@ begin
 
 class Baseball < Linkbot::Plugin
     def self.on_message(message, match)
-	def on_message(match)
 		if !match || match.length < 2
 			"!baseball [team] [date]\nTeams: #{Team::teams.keys.join(' ')}\nDate Format: DD-MM-YYYY or today (default) or yesterday"
 		else
@@ -35,7 +34,7 @@ class Baseball < Linkbot::Plugin
 		end
     end
 
-    def help
+    def self.help
       "!baseball [team] [date] - Gets baseball scores! (no args gives more help)"
     end
 
